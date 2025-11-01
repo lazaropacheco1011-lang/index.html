@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css.css">
+    <title>Estructura html</title>
+</head>
+
+<body>
+    <header>
+        <nav id="header1">
+            <img src="/Foto/HTML5_logo_and_wordmark.svg.png" alt="logo de html" width="50" height="50">                
+            <a href="index.html">Inicio</a>
+            <a href="etiquetas.html">Etiquetas</a>
+            <a href="atributos.html">Atributos</a>
+            <a href="css.html">CSS</a>
+            <a href="javascript.html">JavaScript</a>
+            <div class="derecha">
+                <a href="acercade.html">Acerca de</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="contenido">
+            <ol>
+                <h1>Contenido</h1>
+                <li><a href="">Etiquetas de documentos</a></li>
+                <li><a href="">Etiquetas de Meta Datos</a></li>
+                <li><a href="">Etiquetas de Agrupacion</a></li>
+                <li><a href="">Etiquetas Textuales</a></li>
+                <li><a href="">Etiquetas Semanticas.</a></li>
+            </ol>
+        </section>
+        <br>
+        <section id="contenido">
+            <h1>Etiquetas de docuemntos</h1>
+            <img src="Foto/4813217.jpg" alt="Foto" width="280" height="150">
+            <P>Las etiquetas HTML son fragmentos de código que se utilizan para estructurar y dar formato al contenido
+                de una página web, indicando al navegador cómo mostrar cada elemento. Generalmente se componen de una
+                etiqueta de apertura (ej. &lt;p&gt;) y una de cierre (ej. &lt;p&gt;), aunque algunas son autocontenidas.
+                Cada etiqueta tiene un propósito específico, como definir un párrafo, un encabezado, una imagen o un
+                enlace.
+                Funcionamiento
+                Definición: Las etiquetas marcan el texto o los elementos para que el navegador los interprete
+                correctamente.
+                Estructura: La mayoría de las etiquetas van en pares, con una etiqueta de apertura (ej. &lt;div&gt;) y
+                una de cierre (ej. &lt;div&gt;). Algunas etiquetas no necesitan una de cierre, como las que insertan una
+                imagen (&lt;img&gt;).
+                Atributos: Las etiquetas pueden tener atributos, que son información adicional que modifica su
+                comportamiento o apariencia, como se ve en &lt;p align="center&gt;.
+                Ejemplos de etiquetas comunes
+                Encabezados: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; para diferentes niveles de títulos.
+                Párrafos: &lt;p&gt; para bloques de texto.
+                Enlaces: &lt;a&gt; para crear hipervínculos.
+                Imágenes: &lt;img&gt; para incrustar imágenes.
+                Negritas y énfasis: &lt;strong&gt; para el texto importante y &lt;em&gt; para énfasis.
+                Saltos de línea: &lt;br&gt; para forzar un salto de línea.
+                División de contenido: &lt;div&gt; para agrupar elementos en bloques, a menudo utilizado con CSS.
+                En resumen, las etiquetas son los "bloques de construcción" del código web, ya que son la forma en que
+                los programadores le dicen al navegador qué es cada parte de la página y cómo debe ser presentada al
+                usuario.
+            </P>
+        </section>
+        <br>
+        <section id="contenido">
+            <h1>Etiquetas de meta datos</h1>
+            <img src="Foto/los-metadatos-html5.jpg" alt="Foto" width="200" height="150">
+            <P>Las etiquetas de metadatos HTML se encuentran en la sección
+                &lt;head&gt; de un documento y proporcionan información sobre la página web para navegadores, motores de
+                búsqueda y otros clientes. Las más comunes incluyen
+                &lt;meta charset="UTF-8"> para la codificación de caracteres,
+                &lt;meta name="description" content="..."&gt; para una breve descripción, y
+                &lt;meta name="viewport" ...&gt; para el diseño en dispositivos móviles. Otras etiquetas controlan el
+                autor, las palabras clave o las instrucciones para los robots de búsqueda.
+                Etiquetas de metadatos comunes
+                Codificación de caracteres: &lt;meta charset="UTF-8"&gt;
+                Especifica la codificación de caracteres del documento, lo que es crucial para que se muestren
+                correctamente caracteres especiales.
+                Descripción: &lt;meta name="description" content="...">
+                Proporciona un resumen del contenido de la página que a menudo se muestra en los resultados de
+                búsqueda.
+                Palabras clave: &lt;meta name="keywords" content="..."&gt;
+                Define palabras clave relevantes para la página. Su importancia para SEO ha disminuido con el
+                tiempo.
+                Autor: &lt;meta name="author" content="..."&gt;
+                Indica el nombre del autor del documento.
+                Viewport: &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                Configura cómo se debe ajustar el ancho y la escala de la página en diferentes dispositivos,
+                haciendo que el sitio sea "responsive".
+                Robots: &lt;meta name="robots" content="..."&gt;
+                Instruye a los robots de los motores de búsqueda sobre si deben indexar o no la página y si deben
+                seguir sus enlaces.
+                Propósito principal
+                Mejorar la indexación por motores de búsqueda: Proporcionan información clave para que los
+                buscadores comprendan de qué trata la página y la clasifiquen correctamente.
+                Facilitar la administración del sitio: Ayudan a los navegadores y otras aplicaciones a interpretar y
+                mostrar la página de manera adecuada.
+                Controlar la visualización en dispositivos móviles: La etiqueta viewport es fundamental para
+                asegurar que el diseño web se adapte a las pantallas de teléfonos y tabletas.
+            </P>
+        </section>
+        <br>
+        <section id="contenido">
+            <h1>Etiquetas HTML de agrupación</h1>
+            <img src="Foto/etiqueta-q-en-html.webp" alt="Foto" width="200" height="150">
+            <P>Etiquetas HTML de agrupación
+                Las siguientes etiquetas se utilizan para agrupar información, como es el caso de las etiquetas
+                &lt;div&gt;
+                o &lt;p&gt; que vimos en el ejemplo mostrado anteriormente:
+                Etiqueta Descripción URL
+                &lt;div&gt; Capa o división utilizado para agrupar varias etiquetas HTML. La etiqueta &lt;div&gt;
+                &lt;p&gt; Define un párrafo de texto (con sus etiquetas HTML para texto). La etiqueta &lt;p&gt;
+                &lt;main&gt; Contenedor para englobar la parte principal de la página. La etiqueta &lt;main&gt;
+                &lt;hr&gt; Indica una separación temática del texto. La etiqueta &lt;hr&gt;
+                &lt;ol&gt; Crea una lista numerada (con orden). La etiqueta &lt;ol&gt;
+                &lt;ul&gt; Crea una lista donde el orden no importa. La etiqueta &lt;ul&gt;
+                &lt;li&gt; Contiene uno de los ítems de una lista numerada o sin numerar. La etiqueta &lt;li&gt;
+                &lt;pre&gt; Establece un texto preformateado (respetando espacios y saltos de línea). La etiqueta
+                &lt;pre&gt;
+                &lt;blockquote&gt; Agrupa información y características de una cita (autor, fuente, etc...). La etiqueta
+                &lt;blockquote&gt;
+                &lt;dl&gt; Crea una lista de definiciones. La etiqueta &lt;dl&gt;
+                &lt;dt&gt; Establece el término de una definición. La etiqueta &lt;dt&gt;
+                &lt;dd&gt; Establece la descripción de un término de una definición. La etiqueta &lt;dd&gt;
+                &lt;figure&gt; Agrupa un elemento visual en una figura o ilustración. La etiqueta &lt;figure&gt;
+                &lt;figcaption&gt; Establece una leyenda a una figura o ilustración. La etiqueta &lt;figcaption&gt;
+                Estas son algunas de las etiquetas HTML utilizadas para agrupar contenido con cierta relación. En cada
+                página específica enlazada explicamos cada etiqueta, pero vamos a ver por encima algunas de ellas para
+                entender la idea principal:
+            </P>
+        </section>
+        <br>
+        <section id="contenido">
+            <h1>Etiquetas Textuales</h1>
+            <img src="Foto/002-html-etiquetas-de-texto-1-2048.webp" alt="Foto" width="300" height="200">
+            <P>Las etiquetas textuales son fragmentos de código (HTML) que se usan para estructurar y dar formato al
+                texto en una página web, diferenciando su significado semántico y/o apariencia visual. Sirven para
+                indicar que un texto es importante (&lt;code&gt;&lt;code), está enfatizado (code&gt;
+                &lt;code), es un título (code&gt;
+                &lt;code), un párrafo (code&gt;
+                &lt;code) o una cita (code&gt;
+                &lt;code), entre otras funciones. &lt;P&gt;
+                Tipos de etiquetas textuales
+                Para el formato:
+                &lt;b&gt;: Para aplicar negrita sin darle un significado especial al texto.
+                &lt;i&gt;: Para aplicar cursiva sin darle un significado especial al texto.
+                &lt;u&gt;: Para subrayar texto.
+                &lt;sup&gt;: Para texto superíndice.
+                &lt;sub&gt;: Para texto subíndice.
+                &lt;s&gt;: Para texto tachado o que ya no es relevante.
+                Para la semántica (significado):
+                &lt;strong&gt;: Indica que el texto tiene una gran importancia.
+                &lt;em&gt;: Indica que el texto debe ser enfatizado.
+                &lt;mark&gt;: Resalta el texto como si fuera marcado con un rotulador.
+                &lt;cite&gt;: Para el título de una obra creativa (libro, película, etc.).
+                &lt;q>: Para una cita corta dentro del texto.
+                &lt;abbr&gt;: Para abreviaturas y acrónimos.
+                &lt;dfn&gt;: Indica un término que está siendo definido.
+                &lt;code&gt;: Muestra un fragmento de código de programación.
+                &lt;var&gt;: Representa una variable en una expresión matemática o de programación.
+                &lt;time&gt;: Indica una fecha o hora.
+                Para la estructura y organización:
+                &lt;h1&gt; - &lt;h6&gt;: Para encabezados de distintos niveles de importancia.
+                div: Para agrupar otros elementos y crear secciones.
+                &lt;p&gt;: Para crear párrafos de texto.
+                &lt;br&gt;/`: Para hacer un salto de línea. &lt;hr &lt;/`: Para crear una línea horizontal.
+            </p>
+        </section>
+        <br>
+        <section id="contenido">
+            <h1>Etiquetas Sematicas.</h1>
+            <img src="Foto/ES-Semantic-Search.png" alt="Foto" width="300" height="200">
+            <p>Las etiquetas semánticas son etiquetas HTML que definen el significado y propósito de su contenido para
+                los navegadores y los motores de búsqueda, ayudando a estructurar y organizar un sitio web de manera más
+                clara. Ejemplos comunes incluyen &lt;header&lt;, &lt;nav&lt;, &lt;article&lt; y &lt;footer&lt;, que transmiten su
+                función de forma inherente, a diferencia de las etiquetas no semánticas como &lt;div> y &lt;span&lt;, que
+                solo son contenedores genéricos.
+                Características principales
+                Claridad de propósito: Indican la función del contenido que encierran (por ejemplo, una &lt;nav&lt; para la
+                navegación o un &lt;article&lt; para un contenido independiente).
+                Estructura y organización: Ayudan a crear una jerarquía lógica en el código, facilitando su comprensión
+                por parte de otros desarrolladores.
+                Beneficios para el SEO: Proporcionan a los motores de búsqueda información sobre la estructura y el
+                contenido de la página, lo que puede mejorar la indexación y el posicionamiento.
+                Mejora de la accesibilidad: Sirven como puntos de referencia para las tecnologías de asistencia, como
+                los lectores de pantalla, permitiendo a los usuarios navegar por el contenido de forma más eficiente.
+                Mejora de la legibilidad del código: Hacen que el código sea más limpio y fácil de leer y mantener,
+                especialmente en equipos de desarrollo.
+                Ejemplos de etiquetas semánticas
+                header: Encabezado de una sección o página.
+                nav: Sección de navegación principal.
+                article: Contenido independiente y autocontenido (por ejemplo, una entrada de blog).
+                section: Una sección temática genérica.
+                aside: Contenido relacionado pero separado del flujo principal (por ejemplo, una barra lateral).
+                footer: Pie de página de una sección o página.
+                figure: Para agrupar contenido de referencia, como imágenes, con una leyenda figcaption.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

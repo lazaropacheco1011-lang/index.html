@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css.css">
+    <title>Estructura html</title>
+</head>
+
+<body>
+    <header>
+        <nav id="header1">
+            <img src="/Foto/HTML5_logo_and_wordmark.svg.png" alt="logo de html" width="50" height="50">
+            <a href="index.html">Inicio</a>
+            <a href="etiquetas.html">Etiquetas</a>
+            <a href="atributos.html">Atributos</a>
+            <a href="css.html">CSS</a>
+            <a href="javascript.html">JavaScript</a>
+            <div class="derecha">
+                <a href="acercade.html">Acerca de</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="contenido">
+            <ol>
+                <h1>Contenido</h1>
+                <li><a href="">¿Qué es JavaScript?</a></li>
+                <li><a href="">¿Cómo utilizar JavaScript con HTML?</a></li>
+                <li><a href="">3.-..................................................................</a></li>
+        </section>
+        <br>
+        <section id="queeshtml">
+            <h1>¿Qué es JavaScript?</h1>
+            <img src="Foto/cosÔÇÖe╠Ç-Javascript-e-come-impararlo_ORIZZONTALE-cover.jpg" alt="Foto" width="200"
+                height="100">
+            <p>JavaScript es un lenguaje de programación de alto nivel que se usa para hacer páginas web interactivas y
+                dinámicas. Se ejecuta en el navegador del usuario y trabaja junto con HTML (estructura) y CSS (estilo)
+                para crear la experiencia web moderna, manejando elementos como animaciones, formularios, contenido
+                dinámico y juegos.
+                Funcionalidades clave
+                Interactividad: Permite responder a las acciones del usuario, como clics, movimientos del ratón o
+                entradas de texto.
+                Contenido dinámico: Puede cargar y actualizar contenido en una página sin necesidad de recargarla por
+                completo, como en las redes sociales.
+                Animaciones: Se utiliza para crear animaciones de imágenes y otros elementos de la página.
+                Validación de formularios: Permite verificar si los datos ingresados por el usuario en un formulario son
+                correctos antes de enviarlos al servidor.
+                Juegos y multimedia: Es posible crear juegos y manejar la reproducción de audio y video.
+                Cómo funciona en la web
+                Lado del cliente: Se incrusta directamente en el código de una página web o se enlaza desde un archivo
+                .js separado. El navegador del usuario descarga y ejecuta este código.
+                Evolución a lado del servidor: Con el uso de entornos como Node.js, JavaScript también puede usarse en
+                el lado del servidor (backend) para tareas como interactuar con bases de datos o procesar pagos, señala
+                ebac.mx.
+                Diferencia con Java
+                Es importante no confundir JavaScript con Java; son dos lenguajes distintos con propósitos diferentes.
+                JavaScript es un lenguaje de scripting interpretado que se ejecuta en el navegador, mientras que Java es
+                un lenguaje compilado que se ejecuta en otros entornos.
+            </p>
+        </section>
+        <br>
+        <section id="queeshtml">
+            <h1>¿Cómo utilizar JavaScript con HTML?</h1>
+            <img src="Foto/AnyConv.com__java1.webp" alt="Foto" width="200" height="100">
+            <p>Para usar JavaScript con HTML, puedes enlazar un archivo .js externo en una etiqueta &lt;script&gt;
+                dentro de tu documento HTML, o puedes escribir el código JavaScript directamente entre las etiquetas
+                &lt;script&gt; . La etiqueta &lt;script&gt; se puede colocar tanto en la sección &lt;head&gt; como en el
+                &lt;body&gt; del HTML, dependiendo de cuándo quieres que se cargue el código.
+                1. Enlazar un archivo de JavaScript externo
+                Esta es la forma recomendada para la mayoría de los casos.
+                Crea un archivo JavaScript: Crea un archivo con la extensión .js (por ejemplo, script.js) y escribe tu
+                código JavaScript dentro de él.
+                Enlaza el archivo en HTML: En tu archivo HTML, agrega una etiqueta &lt;script&gt; y usa el atributo src
+                para apuntar al archivo .js. Es común colocar esta etiqueta justo antes de la etiqueta de cierre
+                &lt;body&gt; para que el contenido HTML se cargue primero.
+                html
+                &lt;DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title>Mi Página&lt;titlegt;&gt;
+                &lt;headgt;&gt;
+                &lt;bodygt;&gt;
+                &lt;h1gt;Hola Mundo&lt;h1gt;&gt;
+
+                <!-- El script se carga después de que el HTML se haya renderizado -->
+                &lt;script src script.js &lt;script&gt;
+                &lt;body&gt;
+                &lt;html&gt;
+                2. Escribir código JavaScript en línea
+                Puedes escribir código directamente en el documento HTML.
+                Inserta el código: Utiliza la etiqueta &lt;script&gt; y coloca tu código JavaScript directamente entre
+                las etiquetas de apertura y cierre.
+                html
+                &lt;DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title>Mi Página&lt;title&gt;
+                &lt;head&gt;
+                &lt;body&gt;
+                &lt;h1>Hola Mundo&lt;h1&gt;
+
+                &lt;script&gt;
+                // Este código se ejecutará en línea
+                console.log("¡Hola desde JavaScript en línea!");
+                &lt;script&gt; 
+                &lt;body&gt; 
+                &lt;html&gt; 
+                Consideraciones adicionales
+                Ubicación de la etiqueta &lt;script&gt; :
+                Colocar el script en el &lt;head&gt; hace que se cargue antes que el contenido de la página, lo que es
+                útil para scripts que deben ejecutarse temprano, como bibliotecas.
+                Colocar el script al final del &lt;body&gt; evita que el script bloquee la carga de la página, lo cual
+                es útil para scripts que interactúan con elementos del DOM.
+                Atributos async y defer: Para mejorar el rendimiento, puedes usar async o defer en la etiqueta
+                &lt;script&gt; para que la carga del script no bloquee la renderización de la página.
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>

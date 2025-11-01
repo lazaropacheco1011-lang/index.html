@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css.css">
+    <title>Estructura html</title>
+</head>
+
+<body>
+    <header>
+        <nav id="header1">
+            <img src="/Foto/HTML5_logo_and_wordmark.svg.png" alt="logo de html" width="50" height="50">                   
+            <a href="index.html">Inicio</a>
+            <a href="etiquetas.html">Etiquetas</a>
+            <a href="atributos.html">Atributos</a>
+            <a href="css.html">CSS</a>
+            <a href="javascript.html">JavaScript</a>
+            <div class="derecha">
+                <a href="acercade.html">Acerca de</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="contenido">
+            <ol>
+                <h1>Contenido</h1>
+                <li><a href="">¿Qué es CSS? </a></li>
+                <li><a href="">¿Cómo utilizar CSS con HTML?</a></li>
+                <li><a href="">CSS en línea.</a></li>
+                <li><a href="">CSS interno.</a></li>
+                <li><a href="">CSS Externo.</a></li>
+        </section>
+        <br>
+        <section id="queeshtml">
+            <h1>¿Qué es CSS?</h1>
+            <img src="Foto/que-es-css.webp" alt="Foto" width="250" height="150">
+            <p>CSS son las siglas de Hojas de Estilo en Cascada (Cascading Style Sheets), un lenguaje de diseño que se
+                utiliza para controlar el aspecto visual de documentos web escritos en lenguajes de marcado como HTML.
+                Mientras que el HTML proporciona la estructura y el contenido de una página, el CSS se encarga de su
+                diseño, como el color, la fuente, el tamaño, la posición, los márgenes y otros efectos visuales.
+            </p>
+        </section>
+        <br>
+        <section id="queeshtml">
+            <h1>¿Cómo utilizar CSS con HTML?</h1>
+            <img src="Foto/images 5.jpg" alt="Foto" width="250" height="150">
+            <p> Puedes usar CSS con HTML de tres maneras principales: inline (directamente en la etiqueta HTML), interna
+                (dentro de la etiqueta &lt;style&gt; en el &lt;head&gt;) o externa (vinculando un archivo .css externo).
+                La forma más recomendada y organizada es la externa, que consiste en crear un archivo CSS separado y
+                enlazarlo en la sección &lt;head&gt; del HTML con la etiqueta &lt;link&gt;.
+                1. Estilo externo (Recomendado)
+                Es la práctica más común y organizada, ya que separa el contenido ( HTML) del estilo (CSS).
+                Paso 1: Crea un archivo nuevo con la extensión css (por ejemplo, estilos.css) y escribe tus reglas CSS
+                dentro.
+                Paso 2: En el archivo HTML, dentro de la sección &lt;head&gt;, añade la etiqueta &lt;link&gt; para
+                vincular el archivo CSS.
+                html
+            </p>
+        </section>
+        <br>
+        <section id="queeshtml">
+            <h1>CSS en linea</h1>
+            <img src="Foto/images6.png" alt="Foto" width="250" height="150">
+            <p>Como se puede ver, el estilo está incrustado en la propia etiqueta HTML, lo que ya proporciona algunas
+                características interesantes y otras que no lo son tanto:
+
+                Ventajas
+
+                💖 No requiere archivos adicionales: Se hace desde el mismo HTML
+                💖 Es cómodo desde Javascript: Usando .style.color se puede obtener o cambiar
+                Desventajas
+
+                💔 Es fácil olvidar: Tienes que revisar el HTML para saber los estilos que aplica
+                💔 Es difícil reutilizar: Debes volverlo a escribir en otro .html
+                💔 No soporta pseudoclases ni pseudoelementos: Por ejemplo :hover o ::before
+                💔 No soporta reglas: media queries @media, @import o @font-face, entre otras
+                💔 Viola la regla de separación de responsabilidades: El HTML debe ser estructura y contenido
+                💔 Si necesitas sobreescribir un estilo, tienes que usar !important (o Javascript)
+                💔 Es poco legible si requerimos muchas propiedades
+                💔 Incrementa el tamaño del HTML
+            </p>
+        </section>
+        <br>
+        <section id="queeshtml">
+            <h1>CSS ineterno</h1>
+            <img src="Foto/implementacion-css-interno-1024x1024.png" alt="Foto" width="250" height="180">
+            <p>CSS Interno
+                El CSS interno o incrustado requiere que añadas la etiqueta &lt;style&gt; en la sección &lt;head&gt; de
+                tu documento HTML.
+
+                Este estilo CSS es un método eficaz para dar estilo a una sola página. Sin embargo, utilizar este estilo
+                para varias páginas requiere mucho tiempo, ya que es necesario poner reglas CSS en cada página de tu
+                sitio web.
+
+                A continuación te explicamos cómo puedes utilizar el CSS interno:
+
+                Abre tu página HTML y localiza la etiqueta de apertura &lt;head&gt;.
+                Pon el siguiente código justo después de la etiqueta &lt;head&gt;:
+                &lt;style type="text/css"&gt;
+                Añade las reglas CSS en una nueva línea. Aquí hay un ejemplo:
+                body {
+                background-color: blue;
+                }
+                h1 {
+                color: red;
+                padding: 60px;
+                }
+                Escribe la etiqueta de cierre:
+                &lt;style&gt;
+                Tu archivo HTML se verá así:
+
+                &lt;DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;style&gt;
+                body {
+                background-color: blue;
+                }
+                h1 {
+                color: red;
+                padding: 60px;
+                }
+                &lt;style&gt;
+                &lt;head&gt;
+                &lt;body&gt;
+
+                &lt;h1&gt;Tutoriales de Hostinger&lt;h1&gt;
+                &lt;p&gt;Esto es un párrafo&lt;p&gt;
+
+                &lt;body&gt;
+                &lt;html&gt;
+                Ventajas del CSS Interno:
+                Puedes utilizar selectores de clase e ID en esta hoja de estilo. Veamos un ejemplo:
+                .class {
+                propiedad1 : valor1;
+                propiedad2 : valor2;
+                propiedad3 : valor3;
+                }
+
+                #id {
+                propiedad1 : valor1;
+                propiedad2 : valor2;
+                propiedad3 : valor3;
+                }
+                Como sólo añadirás el código dentro del mismo archivo HTML, no necesitas cargar varios archivos.
+                Desventajas del CSS Interno:
+                Añadir el código al documento HTML puede aumentar el tamaño de la página y el tiempo de carga.
+            </p>
+        </section>
+        <br>
+        <section id="queeshtml">
+            <h1>CSS externo</h1>
+            <img src="Foto/implementacion-css-externo-1024x1024.png" alt="Foto" width="250" height="180"> 
+            <p>   
+            El CSS
+            externo es un archivo .css separado que contiene reglas de estilo para un sitio web completo, lo que permite
+            mantener el código HTML limpio y facilita los cambios de diseño en múltiples páginas. Para usarlo, se
+            incluye una etiqueta &lt;link&gt; en el &lt;head&gt; de cada página HTML para referenciar el archivo de
+            estilo externo. Este enfoque es ideal para mantener la consistencia en un sitio grande y mejora las
+            velocidades de carga, ya que el navegador puede almacenar en caché el archivo CSS.
+            Cómo implementar el CSS externo
+            Código
+
+            &lt;DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;link rel&gt;   &lt;stylesheet href&gt;    &lt;style.css&gt;
+            &lt;head&gt;
+            &lt;body&gt;
+           
+            &lt;body&gt;
+            &lt;html&gt;
+            Código
+
+             Contenido del archivo  &lt;style.css&gt; 
+             &lt;body&gt; {
+            &lt;font-family:&gt; Arial, &lt;sans-serif&gt; 
+            }
+
+            &lt;h1&gt; {
+            color: navy;
+            }
+            Ventajas clave
+            Mantenimiento eficiente: Al modificar el archivo .css externo, se actualiza todo el sitio web a la vez, en
+            lugar de editar cada página individualmente.
+            Organización: Separa el contenido (HTML) del diseño (CSS), haciendo que el código sea más limpio, ordenado y
+            fácil de navegar.
+            Consistencia: Asegura un diseño uniforme en todas las páginas del sitio web.
+            Rendimiento: Las hojas de estilo externas permiten a los navegadores almacenar en caché los archivos CSS, lo
+            que resulta en tiempos de carga más rápidos para las páginas subsecuentes.
+            Consideraciones
+            Tiempo de carga inicial: Es posible que los cambios de estilo no se vean hasta que el archivo CSS externo se
+            haya descargado.
+            Múltiples archivos: Si el proyecto es muy grande, subir demasiados archivos CSS puede aumentar el tiempo de
+            carga.
+            </p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
